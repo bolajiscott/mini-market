@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+<title>Mini Market</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="css/mystyles.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body id="wraper">
+<header>
+  <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mini Market</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About Us</a></li>
+            <li class=""><a href="#"> Contact Us </a> 
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+  </nav>
+</header>
+<main>
+<div class="section container alert alert-info">
+    <div id="output"></div>
+</div>
+  <div class="section container">
+    <div class="row">
+      <form name='stock' id="stock">
+      <div class="col-md-12">
+      <div id="formCheckbox">
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Tomato" name="product" value="500"> Tomato - &#8358 500
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Garri" name="product" value="200"> Garri - #200
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Beans" name="product" value="400"> Beans - #400
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Indomie" name="product" value="300"> Indomie - #300
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Sardine" name="product" value="400"> sardine - #400
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Milk" name="product" value="200"> Milk - #200
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Spaghetti" name="product" value="500"> Spaghetti - #500
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Maggi" name="product" value="800"> Maggi - #800
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Oil" name="product" value="1000"> Oil -#1000
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Geisha" name="product" value="390"> Geisha -#390
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Salt" name="product" value="80"> Salt -#80
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="Plantain" name="product" value="290"> Plantain -#290
+              </label>
+            </div>
+          </div>
+            <div class="col-md-8 col-md-offset-4" id="checkout">
+              <button type="button" class="btn btn-primary" onclick="getCalculate()">Calculate</button>
+              <button type="button" class="btn btn-warning" onclick="getDoneShoping()">Done Shoping</button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</main>
+
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
